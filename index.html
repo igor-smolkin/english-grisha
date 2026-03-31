@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>English Practice</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .app {
+      width: 90%;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    .question {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      font-size: 18px;
+      border-radius: 8px;
+      border: none;
+      margin-bottom: 15px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      font-size: 18px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .result {
+      margin-top: 15px;
+      font-size: 20px;
+      height: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <div class="question" id="question"></div>
+    <input id="answerInput" placeholder="Type your answer..." />
+    <button onclick="checkAnswer()">Check</button>
+    <div class="result" id="result"></div>
+  </div>
+
+  <script>
+    const questions = [
+      {
+        question: "I ___ never been there.",
+        answers: ["have", "'ve"]
+      },
+      {
+        question: "If I ___ rich, I would travel.",
+        answers: ["were"]
+      },
+      {
+        question: "She ___ finished her homework.",
+        answers: ["has", "'s"]
+      },
+      {
+        question: "If he ___ earlier, he would have caught the train.",
+        answers: ["had"]
+      }
+    ];
+
+    let currentQuestion = null;
+
+    function getRandomQuestion() {
+      return questions[Math.floor(Math.random() * questions.length)];
+    }
+
+    function showQuestion() {
+      currentQuestion = getRandomQuestion();
+      document.getElementById("question").innerText = currentQuestion.question;
+      document.getElementById("answerInput").value = "";
+      document.getElementById("result").innerText = "";
+      document.getElementById("answerInput").focus();
+    }
+
+    function normalize(str) {
+      return str.trim().toLowerCase();
+    }
+
+    function checkAnswer() {
+      const input = normalize(document.getElementById("answerInput").value);
+      const resultEl = document.getElementById("result");
+
+      const isCorrect = currentQuestion.answers.some(
+        a => normalize(a) === input
+      );
+
+      if (isCorrect) {
+        resultEl.innerText = "✅";
+      } else {
+        resultEl.innerText = `❌ Correct: ${currentQuestion.answers[0]}`;
+      }
+
+      setTimeout(showQuestion, 1000);
+    }
+
+    document.getElementById("answerInput").addEventListener("keydown", function(e) {
+      if (e.key === "Enter") {
+        checkAnswer();
+      }
+    });
+
+    showQuestion();
+  </script>
+</body>
+</html>
