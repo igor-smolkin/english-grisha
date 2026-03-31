@@ -1,6 +1,56 @@
 const questions = [
-  {
-    "question": "___",
-    "answers": ["___"]
-  }
-]
+  { question: "If you heat water to 100°C, it ___.", answers: ["boils"] },
+  { question: "If I ___ time, I will call you.", answers: ["have"] },
+  { question: "If she studies hard, she ___ the exam.", answers: ["will pass"] },
+  { question: "If it rains, we ___ at home.", answers: ["will stay"] },
+  { question: "If I were you, I ___ that.", answers: ["would not do", "wouldn't do"] },
+  { question: "If he ___ earlier, he would catch the train.", answers: ["left"] },
+  { question: "If I ___ rich, I would travel the world.", answers: ["were"] },
+  { question: "If they invited me, I ___.", answers: ["would come"] },
+  { question: "If she ___ more time, she would learn Spanish.", answers: ["had"] },
+  { question: "If we ___ a car, we would drive there.", answers: ["had"] },
+  
+  { question: "If I had known, I ___ you.", answers: ["would have told"] },
+  { question: "If she had studied, she ___ the test.", answers: ["would have passed"] },
+  { question: "If they had left earlier, they ___ the train.", answers: ["would have caught"] },
+  { question: "If we had taken a taxi, we ___ on time.", answers: ["would have arrived"] },
+  { question: "If he had worked harder, he ___ promoted.", answers: ["would have been"] },
+  { question: "If I had seen her, I ___ hello.", answers: ["would have said"] },
+  { question: "If you had told me, I ___ helped you.", answers: ["would have"] },
+  { question: "If they had invited us, we ___.", answers: ["would have come"] },
+  { question: "If she had woken up earlier, she ___ late.", answers: ["would not have been", "wouldn't have been"] },
+  { question: "If I had had money, I ___ a car.", answers: ["would have bought"] },
+  
+  { question: "If I ___ you, I would apologize.", answers: ["were"] },
+  { question: "If he ___ more careful, he wouldn't make mistakes.", answers: ["were"] },
+  { question: "If we ___ more time, we would finish this.", answers: ["had"] },
+  { question: "If she ___ taller, she would play basketball.", answers: ["were"] },
+  { question: "If they ___ harder, they would succeed.", answers: ["worked"] },
+  { question: "If I ___ less coffee, I would sleep better.", answers: ["drank"] },
+  { question: "If he ___ more money, he would buy a house.", answers: ["had"] },
+  { question: "If we ___ closer, we would visit more often.", answers: ["lived"] },
+  { question: "If she ___ English better, she would get the job.", answers: ["spoke"] },
+  { question: "If I ___ free, I would join you.", answers: ["were"] },
+  
+  { question: "If you mix red and blue, you ___.", answers: ["get purple"] },
+  { question: "If you don't hurry, you ___ late.", answers: ["will be"] },
+  { question: "If he calls, I ___ him back.", answers: ["will call"] },
+  { question: "If we finish early, we ___ a walk.", answers: ["will take"] },
+  { question: "If she doesn't eat, she ___ hungry.", answers: ["will be"] },
+  { question: "If they don't study, they ___ the exam.", answers: ["will fail"] },
+  { question: "If I see him, I ___ him the truth.", answers: ["will tell"] },
+  { question: "If it gets cold, we ___ the heater on.", answers: ["will turn"] },
+  { question: "If you press this button, the machine ___.", answers: ["starts"] },
+  { question: "If ice melts, it ___ water.", answers: ["becomes"] },
+  
+  { question: "If I had studied harder, I ___ a better job now.", answers: ["would have"] },
+  { question: "If she had gone to bed earlier, she ___ tired now.", answers: ["would not be", "wouldn't be"] },
+  { question: "If they had saved money, they ___ a house now.", answers: ["would have"] },
+  { question: "If I were more confident, I ___ that yesterday.", answers: ["would have done"] },
+  { question: "If he had taken the job, he ___ here now.", answers: ["would be"] },
+  { question: "If we had left earlier, we ___ here now.", answers: ["would be"] },
+  { question: "If I hadn't missed the train, I ___ on time now.", answers: ["would be"] },
+  { question: "If she were more careful, she ___ that mistake yesterday.", answers: ["would not have made", "wouldn't have made"] },
+  { question: "If they had trained more, they ___ the match now.", answers: ["would be winning"] },
+  { question: "If I were smarter, I ___ that mistake.", answers: ["would not have made", "wouldn't have made"] }
+];
