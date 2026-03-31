@@ -1,6 +1,6 @@
 const questions = [
   {
     "question": "___",
-    "answer": "___"
+    "answers": ["___"]
   }
 ]
